@@ -18,6 +18,11 @@ class ProductTemplate(models.Model):
         recordset or to their templates.
         """
         domain = [
+            "|",
+            "&",
+            ("res_model", "=", "product.product"),
+            ("res_id", "in", self.product_variant_ids.ids),
+            "&",
             ("res_model", "=", "product.template"),
             ("res_id", "in", self.ids),
         ]
