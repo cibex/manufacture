@@ -28,18 +28,25 @@ msgstr "提交日期"
 #. module: mrp_sale_info
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__partner_id
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__partner_id
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.view_mrp_production_filter
 msgid "Customer"
 msgstr "客户"
 
 #. module: mrp_sale_info
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__client_order_ref
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__client_order_ref
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.view_mrp_production_filter
 msgid "Customer Reference"
 msgstr ""
 
 #. module: mrp_sale_info
 #: model:ir.model,name:mrp_sale_info.model_mrp_production
-msgid "Production Order"
+msgid "Manufacturing Order"
+msgstr "制造订单"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_sale_order_line__mrp_production_ids
+msgid "Manufacturing orders"
 msgstr ""
 
 #. module: mrp_sale_info
@@ -54,13 +61,18 @@ msgid "Sale order"
 msgstr "销售订单"
 
 #. module: mrp_sale_info
-#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__source_procurement_group_id
-msgid "Source Procurement Group"
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.view_mrp_production_filter
+msgid "Sales Order"
 msgstr ""
 
 #. module: mrp_sale_info
-#: model:ir.model,name:mrp_sale_info.model_stock_rule
-msgid "Stock Rule"
+#: model:ir.model,name:mrp_sale_info.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: mrp_sale_info
+#: model:ir.model,name:mrp_sale_info.model_stock_move
+msgid "Stock Move"
 msgstr ""
 
 #. module: mrp_sale_info
@@ -75,9 +87,6 @@ msgstr ""
 #: model:ir.model,name:mrp_sale_info.model_mrp_workorder
 msgid "Work Order"
 msgstr "工单"
-
-#~ msgid "Manufacturing Order"
-#~ msgstr "制造订单"
 
 #~ msgid "Sale Information"
 #~ msgstr "销售信息"

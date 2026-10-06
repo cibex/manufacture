@@ -12,16 +12,18 @@
         <field name="arch" type="xml">
             <form string="Test">
                 <sheet>
+                    <field name="active" invisible="1" />
+                    <widget
+                        name="web_ribbon"
+                        title="Archived"
+                        bg_color="text-bg-danger"
+                        invisible="active"
+                    />
                     <label for="name" class="oe_edit_only" />
                     <h1>
                         <field name="name" class="oe_inline" />
                     </h1>
                     <group>
-                        <group>
-                            <field name="type" />
-                            <field name="object_id" invisible="type == 'generic'" />
-                            <field name="active" />
-                        </group>
                         <group>
                             <field name="category" />
                             <field name="fill_correct_values" />
@@ -36,10 +38,13 @@
                             <field name="sequence" widget="handle" />
                             <field name="name" />
                             <field name="type" />
-                            <field name="min_value" />
-                            <field name="max_value" />
-                            <field name="uom_id" />
-                            <field name="ql_values" />
+                            <field name="min_value" invisible="type == 'qualitative'" />
+                            <field name="max_value" invisible="type == 'qualitative'" />
+                            <field name="uom_id" invisible="type == 'qualitative'" />
+                            <field
+                                name="ql_values"
+                                invisible="type == 'quantitative'"
+                            />
                         </list>
                     </field>
                 </sheet>
@@ -54,8 +59,6 @@
             <list>
                 <field name="name" />
                 <field name="category" />
-                <field name="type" />
-                <field name="object_id" />
                 <field name="company_id" groups="base.group_multi_company" />
             </list>
         </field>
@@ -96,37 +99,39 @@
                         </list>
                     </field>
                 </group>
-                <div
+                <group
                     name="quantitative"
-                    align="center"
+                    colspan="4"
                     invisible="type != 'quantitative'"
                 >
-                    <h1 name="quantitative-data">
-                        <span name="quantitative-interval">
-                            <field
-                                name="min_value"
-                                class="oe_inline"
-                                nolabel="1"
-                                required="type == 'quantitative'"
-                            />
-                            <span> - </span>
-                            <field
-                                name="max_value"
-                                class="oe_inline"
-                                nolabel="1"
-                                required="type == 'quantitative'"
-                            />
-                        </span>
-                        <span name="quantitative-uom">
-                            <field
-                                name="uom_id"
-                                class="oe_inline"
-                                nolabel="1"
-                                required="type == 'quantitative'"
-                            />
-                        </span>
-                    </h1>
-                </div>
+                    <div align="center">
+                        <h1 name="quantitative-data">
+                            <span name="quantitative-interval">
+                                <field
+                                    name="min_value"
+                                    class="oe_inline"
+                                    nolabel="1"
+                                    required="type == 'quantitative'"
+                                />
+                                <span> - </span>
+                                <field
+                                    name="max_value"
+                                    class="oe_inline"
+                                    nolabel="1"
+                                    required="type == 'quantitative'"
+                                />
+                            </span>
+                            <span name="quantitative-uom">
+                                <field
+                                    name="uom_id"
+                                    class="oe_inline"
+                                    nolabel="1"
+                                    required="type == 'quantitative'"
+                                />
+                            </span>
+                        </h1>
+                    </div>
+                </group>
                 <field name="notes" />
             </form>
         </field>

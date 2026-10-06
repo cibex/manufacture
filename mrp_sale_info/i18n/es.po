@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: manufacture (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-12 23:17+0000\n"
-"PO-Revision-Date: 2023-07-10 10:08+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2026-05-10 11:46+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/oca/OCA-manufacture-9-0/"
 "language/es/)\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: mrp_sale_info
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__commitment_date
@@ -28,19 +28,26 @@ msgstr "Fecha compromiso"
 #. module: mrp_sale_info
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__partner_id
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__partner_id
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.view_mrp_production_filter
 msgid "Customer"
 msgstr "Cliente"
 
 #. module: mrp_sale_info
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__client_order_ref
 #: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__client_order_ref
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.view_mrp_production_filter
 msgid "Customer Reference"
 msgstr "Referencia del cliente"
 
 #. module: mrp_sale_info
 #: model:ir.model,name:mrp_sale_info.model_mrp_production
-msgid "Production Order"
-msgstr "Orden de Producción"
+msgid "Manufacturing Order"
+msgstr "Orden de producción"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_sale_order_line__mrp_production_ids
+msgid "Manufacturing orders"
+msgstr "Órdenes de fabricación"
 
 #. module: mrp_sale_info
 #: model_terms:ir.ui.view,arch_db:mrp_sale_info.mrp_production_workorder_form_view_inherit
@@ -54,14 +61,19 @@ msgid "Sale order"
 msgstr "Pedido de venta"
 
 #. module: mrp_sale_info
-#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__source_procurement_group_id
-msgid "Source Procurement Group"
-msgstr "Origen de Grupo de Adquisiciones"
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.view_mrp_production_filter
+msgid "Sales Order"
+msgstr "Pedido de venta"
 
 #. module: mrp_sale_info
-#: model:ir.model,name:mrp_sale_info.model_stock_rule
-msgid "Stock Rule"
-msgstr "Regla de existencias"
+#: model:ir.model,name:mrp_sale_info.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: mrp_sale_info
+#: model:ir.model,name:mrp_sale_info.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
 
 #. module: mrp_sale_info
 #: model:ir.model.fields,help:mrp_sale_info.field_mrp_production__commitment_date
@@ -79,6 +91,15 @@ msgstr ""
 msgid "Work Order"
 msgstr "Orden de trabajo"
 
+#~ msgid "Production Order"
+#~ msgstr "Orden de Producción"
+
+#~ msgid "Source Procurement Group"
+#~ msgstr "Origen de Grupo de Adquisiciones"
+
+#~ msgid "Stock Rule"
+#~ msgstr "Regla de existencias"
+
 #~ msgid "Display Name"
 #~ msgstr "Nombre a Mostrar"
 
@@ -94,9 +115,6 @@ msgstr "Orden de trabajo"
 #~ msgstr ""
 #~ "Fecha en la que se asegura que los productos estarán enviados. Esta es la "
 #~ "fecha de compromiso con el cliente, basada en el tirmpo de entrega."
-
-#~ msgid "Manufacturing Order"
-#~ msgstr "Orden de producción"
 
 #~ msgid "Sale Information"
 #~ msgstr "Información de venta"
