@@ -49,10 +49,10 @@ addon | version | maintainers | summary
 [mrp_production_allow_recursive](mrp_production_allow_recursive/) | 18.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | MRP Production Allow Recursive
 [mrp_production_auto_validate](mrp_production_auto_validate/) | 18.0.1.0.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Manufacturing Order Auto-Validation when components are picked
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 18.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
-[mrp_production_check_bom_alignment](mrp_production_check_bom_alignment/) | 18.0.1.0.4 |  | Verify that a Manufacturing Order's components and workorder are consistent with its Bill of Materials.
+[mrp_production_check_bom_alignment](mrp_production_check_bom_alignment/) | 18.0.1.1.0 |  | Verify that a Manufacturing Order's components and workorder are consistent with its Bill of Materials.
 [mrp_production_date_planned_finished](mrp_production_date_planned_finished/) | 18.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Allows to plan production from the desired finish date
 [mrp_production_location_picking_type](mrp_production_location_picking_type/) | 18.0.1.0.1 |  | Add production location field to picking types for MRP operations.
-[mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
+[mrp_production_note](mrp_production_note/) | 18.0.1.1.0 |  | Notes in production orders
 [mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 18.0.1.0.0 |  | Updates the operation type creating MO based on the product
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 18.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
 [mrp_propagate_lot_info](mrp_propagate_lot_info/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Propagate lot data from the origin consuming materials
@@ -62,19 +62,20 @@ addon | version | maintainers | summary
 [mrp_stock_move_actual_date](mrp_stock_move_actual_date/) | 18.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Extend actual date handling to manufacturing and unbuild orders
 [mrp_stock_move_line_qty_picked](mrp_stock_move_line_qty_picked/) | 18.0.1.0.0 |  | Adapt functionality of stock_move_line_qty_picked into MRP
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Inhibit subcontracting flow on demand
-[mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 18.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
+[mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 18.0.1.1.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 18.0.1.0.1 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | MRP Subcontracting Skip No Negative
 [mrp_tag](mrp_tag/) | 18.0.1.0.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_unbuild_move_link](mrp_unbuild_move_link/) | 18.0.1.0.0 |  | Link the stock moves of manufacturing orders to the respective unbuild orders
 [mrp_unbuild_valuation_layer_link](mrp_unbuild_valuation_layer_link/) | 18.0.1.0.0 |  | Unbuild orders display the connected valuation layers
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 18.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
 [mrp_workcenter_scrap_reason](mrp_workcenter_scrap_reason/) | 18.0.1.0.0 |  | Filter allowed reason codes with workcenter assigned.
-[mrp_workorder_blocking_time](mrp_workorder_blocking_time/) | 18.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Allow to block time on work orders
+[mrp_workorder_blocking_time](mrp_workorder_blocking_time/) | 18.0.1.0.1 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Allow to block time on work orders
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | adds sequence to production work orders.
 [printing_auto_mrp](printing_auto_mrp/) | 18.0.1.0.1 |  | Printing Auto MRP
 [product_mrp_info](product_mrp_info/) | 18.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds smart button in product form view linking to manufacturing order list.
 [quality_control_mrp_oca](quality_control_mrp_oca/) | 18.0.1.0.0 |  | MRP extension for quality control (OCA)
 [quality_control_oca](quality_control_oca/) | 18.0.1.4.0 |  | Generic infrastructure for quality tests.
+[quality_control_product_manufacturer](quality_control_product_manufacturer/) | 18.0.1.0.0 |  | Provides information related to Manufacturer under Inspection
 [quality_control_stock_oca](quality_control_stock_oca/) | 18.0.1.2.0 |  | Quality control - Stock (OCA)
 [sale_mrp_bom_menu](sale_mrp_bom_menu/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add a Sales > Products > Bills of Materials menu
 [stock_whole_kit_constraint](stock_whole_kit_constraint/) | 18.0.1.0.1 |  | Avoid to deliver a kit partially
